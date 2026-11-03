@@ -50,6 +50,20 @@
         .highlight-gold::after { background-color: rgba(250, 204, 21, 0.4); }
         .highlight-pink::after { background-color: rgba(238, 75, 145, 0.25); }
         .highlight-blue::after { background-color: rgba(56, 189, 248, 0.25); }
+        .wave-emoji:hover {
+            animation: wave 2.5s infinite;
+            transform-origin: 70% 70%;
+        }
+        @keyframes wave {
+            0% { transform: rotate(0.0deg) }
+            10% { transform: rotate(14.0deg) }
+            20% { transform: rotate(-8.0deg) }
+            30% { transform: rotate(14.0deg) }
+            40% { transform: rotate(-4.0deg) }
+            50% { transform: rotate(10.0deg) }
+            60% { transform: rotate(0.0deg) }
+            100% { transform: rotate(0.0deg) }
+        }
     </style>
 </head>
 <body class="text-zinc-400 min-h-screen selection:bg-brandBlue selection:text-black antialiased relative bg-[#080b0b]">
@@ -74,7 +88,7 @@
 
             <div class="space-y-6 max-w-2xl text-left pt-2">
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight drop-shadow-md">
-                    Hey, I'm <span class="text-brandBlue">Bentley</span> 👋
+                    Hey, I'm <span class="text-brandBlue">Bentley</span> <span class="wave-emoji inline-block duration-500">👋</span>
                 </h1>
                 
                 <p class="text-lg sm:text-xl md:text-2xl text-zinc-100 font-semibold leading-relaxed drop-shadow">
